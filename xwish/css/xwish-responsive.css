@@ -1,0 +1,29 @@
+@media all and (max-width: 768px)  {
+
+	.xwish_banner .banner_box {
+		max-width: 100%;
+	} 
+
+	.slick_content {
+		top: 8px;
+	}
+
+	a.navbar-brand {
+	    width: 100%;
+	    text-align: center;
+	}
+
+	.navbar-nav {
+	    margin-left: 0;
+	    text-align: center;
+	}
+
+	.navbar-dark .navbar-toggler {
+	    position: absolute;
+	    top: 10px;
+	    left: 10px;
+	    color: #fff !important;
+	    border-color: #fff !important;
+	    opacity: 1 !important;
+	}
+}
