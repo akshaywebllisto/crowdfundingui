@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html class="campfire" data-commit="e15f6c19663214180def99e62fada9bffa90f2f1">
+
+<head>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+
+	<title>Crowdfunding</title>
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+	<link href="fonts/BebasNeuefonts.css" rel="stylesheet">  
+
+	<!-- Links -->
+	<link rel="icon" type="image/x-icon" href="images/favicon.png">
+	<link rel="apple-touch-icon" type="image/png" href="images/touch_icon.jpeg" sizes="152x152">
+
+	<!-- Custom Style -->
+	<link rel="stylesheet" media="all" href="css/xwish.css">
+
+	<!-- Script -->
+	<script src="js/slick-1acc3cc2aa94ce451783df9d42e0b292bef464e17c060b636e9d844b1e7f82bc.js"></script>
+	
+	
+</head>
+
+<body>
+
+	<div class="localeConditionalHeader" id="js-localeConditionalHeader">
+		<p class="localeConditionalHeader__text">Please get in touch if you have any questions, interests or business ideas.</p><a class="localeConditionalHeader__btn" href="#" target="_blank">GET IN TOUCH</a><a class="localeConditionalHeader__btn localeConditionalHeader__btn--cancel" href="" id="js-localeConditionalHeader__CancelButton">no thanks!</a>
+	</div>
+
+	<script>
+		$(function() {
+		  var header = document.querySelector('#js-localeConditionalHeader');
+		  var button = document.querySelector('#js-localeConditionalHeader__CancelButton');
+		
+		  button.addEventListener('click', function(e) {
+		    e.preventDefault();
+		    $.cookie('isLocaleHeaderDisable', '1', { expires: 3 })
+		    header.remove();
+		  })
+		})
+	</script>
+
+	<div class="root-toppage layouts-root  wrapper">
+		<header class="header">
+			<nav class="gl-header">
+				<div class="navigation clearfix">
+					<div class="logo" id="gl-logo">
+						<a id="hnav_header_logo" title="CAMPFIRE" href="/">
+							<img alt="CAMPFIRE" sizes="100vw" src="images/logo.svg" alt="" />
+						</a>
+					</div>
+					<div class="header-search" id="search-wrap">
+						<form action="/projects/search" autocomplete="off" method="get">
+							<label for="hnav_header_search" id="search-icon"><i class="icon-cf_search"></i>
+							</label>
+							<input class="custom" id="hnav_header_search" name="word" placeholder="Keyword Search" type="text" value=""><a class="search-close" href="" id="hnav_search_close"><i class="icon-cf_close"></i></a>
+						</form>
+						<ul class="header-search-category">
+							<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_art" title="・写真" href="/projects/category/art">アート・写真</a>
+							</li>
+							<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_music" title="音楽" href="/projects/category/music">音楽</a>
+							</li>
+							<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_dance" title="舞台・パフォーマンス" href="/projects/category/dance">舞台・パフォーマンス</a>
+							</li>
+							<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_product" title="プロダクト" href="/projects/category/product">プロダクト</a>
+							</li>
+							<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_technology" title="テクノロジー・ガジェット" href="/projects/category/technology">テクノロジー・ガジェット</a>
+							</li>
+							<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_game" title="ゲーム・サービス開発" href="/projects/category/game">ゲーム・サービス開発</a>
+							</li>
+							<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_food" title="フード・飲食店" href="/projects/category/food">フード・飲食店</a>
+							</li>
+							<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_fashion" title="ファッション" href="/projects/category/fashion">ファッション</a>
+							</li>
+							<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_movie" title="映像・映画" href="/projects/category/movie">映像・映画</a>
+							</li>
+							<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_publishing" title="書籍・雑誌出版" href="/projects/category/publishing">書籍・雑誌出版</a>
+							</li>
+							<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_anime" title="アニメ・漫画" href="/projects/category/anime">アニメ・漫画</a>
+							</li>
+							<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_sports" title="スポーツ" href="/projects/category/sports">スポーツ</a>
+							</li>
+							<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_business" title="ビジネス・起業" href="/projects/category/business">ビジネス・起業</a>
+							</li>
+							<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_challenge" title="チャレンジ" href="/projects/category/challenge">チャレンジ</a>
+							</li>
+							<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_beauty" title="ビューティー・ヘルスケア" href="/projects/category/beauty">ビューティー・ヘルスケア</a>
+							</li>
+							<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_socialgood" title="ソーシャルグッド" href="/projects/category/social-good">ソーシャルグッド</a>
+							</li>
+							<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_local" title="まちづくり・地域活性化" href="/projects/category/local">まちづくり・地域活性化</a>
+							</li>
+						</ul>
+					</div>
+					<div id="header-users">
+						<div class="user-normal"><a id="hnav_user_action_login" title="Login" href="/login">Login<span class="sp-none sc-none"> / New Member Registration</span></a>
+						</div>
+					</div><a id="hnav_search_open" class="search-open" href=""><i class="icon-cf_search"></i></a>
+				</div>
+				<div class="menu-global clearfix" id="menu-global">
+					<ul>
+						<li><a id="hnav_gl_menu_start" href="/readyfor">Ready For</a>
+						</li>
+						<li><a id="hnav_menu_open" href="/projects">Search</a>
+						</li>
+						<li class="sc-none sp-none"><a id="hnav_gl_menu_about" href="/broadcast/">What is crowdfunding?</a>
+            			</li>
+            			<li class="cm-link"><a href="/about/"><i class="fa fa-play-circle"></i>CM Broadcast</a>
+            			</li>
+					</ul>
+				</div>
+				<div class="more-menu" id="more-menu">
+					<ul>
+						<li>
+							<ul>
+								<li><a id="hnav_menu_project_popular" title="人気のプロジェクト" href="/projects/popular">人気のプロジェクト</a>
+								</li>
+								<li><a id="hnav_menu_project_fresh" title="注目の新着プロジェクト" href="/projects/fresh">注目の新着プロジェクト</a>
+								</li>
+								<li><a id="hnav_menu_project_last" title="Project close to end of application" href="/projects/last-spurt">Project close to end of application</a>
+								</li>
+								<li><a id="hnav_menu_project_comingsoon" title="Coming soon" href="/projects/coming-soon">Coming soon</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="category clearfix">
+								<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_art" title="・写真" href="/projects/category/art">アート・写真</a>
+								</li>
+								<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_music" title="音楽" href="/projects/category/music">音楽</a>
+								</li>
+								<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_dance" title="舞台・パフォーマンス" href="/projects/category/dance">舞台・パフォーマンス</a>
+								</li>
+								<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_product" title="プロダクト" href="/projects/category/product">プロダクト</a>
+								</li>
+								<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_technology" title="テクノロジー・ガジェット" href="/projects/category/technology">テクノロジー・ガジェット</a>
+								</li>
+								<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_game" title="ゲーム・サービス開発" href="/projects/category/game">ゲーム・サービス開発</a>
+								</li>
+								<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_food" title="フード・飲食店" href="/projects/category/food">フード・飲食店</a>
+								</li>
+								<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_fashion" title="ファッション" href="/projects/category/fashion">ファッション</a>
+								</li>
+								<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_movie" title="映像・映画" href="/projects/category/movie">映像・映画</a>
+								</li>
+								<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_publishing" title="書籍・雑誌出版" href="/projects/category/publishing">書籍・雑誌出版</a>
+								</li>
+								<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_anime" title="アニメ・漫画" href="/projects/category/anime">アニメ・漫画</a>
+								</li>
+								<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_sports" title="スポーツ" href="/projects/category/sports">スポーツ</a>
+								</li>
+								<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_business" title="ビジネス・起業" href="/projects/category/business">ビジネス・起業</a>
+								</li>
+								<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_challenge" title="チャレンジ" href="/projects/category/challenge">チャレンジ</a>
+								</li>
+								<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_beauty" title="ビューティー・ヘルスケア" href="/projects/category/beauty">ビューティー・ヘルスケア</a>
+								</li>
+								<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_socialgood" title="ソーシャルグッド" href="/projects/category/social-good">ソーシャルグッド</a>
+								</li>
+								<li><i class="icon-cf_arrow-right"></i><a id="hnav_menu_category_local" title="まちづくり・地域活性化" href="/projects/category/local">まちづくり・地域活性化</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<ul>
+								<li><a id="hnav_menu_goodmorning" title="GoodMorning" href="/goodmorning">GoodMorning</a>
+								</li>
+								<li><a id="hnav_menu_closs" title="CLOSS" href="/closs">CLOSS</a>
+								</li>
+								<li><a id="hnav_menu_faavo" title="FAAVO" href="https://faavo.jp">FAAVO</a>
+								</li>
+								<li><a id="hnav_menu_mocolle" title="CAMPFIRE Creation" href="/creation">CAMPFIRE Creation</a>
+								</li>
+								<li><a id="hnav_menu_booster" title="BOOSTER" href="/booster-parco">BOOSTER</a>
+								</li>
+							</ul>
+							<ul>
+								<li><a id="hnav_menu_local" title="CAMPFIREふるさと納税" href="/furusato">CAMPFIREふるさと納税</a>
+								</li>
+								<li><a id="hnav_menu_local" title="machi-ya" href="/machi-ya">machi-ya</a>
+								</li>
+								<li><a id="hnav_menu_fanclub" title="community" href="https://community.camp-fire.jp/">community</a>
+								</li>
+								<li><a id="hnav_menu_3rdtable" title="3rdTable" href="/channels/3rdtable">3rdTable</a>
+								</li>
+								<li><a id="hnav_menu_exodus" title="EXODUS" target="_blank" href="https://exodus.jp">EXODUS</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div class="container">
+			<div class="projects-top">
+				<section class="top-cm-keyvisual">
+					<img class="kv sp-none" sizes="100vw" src="images/banner_img.jpg">
+					<img class="kv sp-block" sizes="100vw" src="images/banner_imgm.jpg">
+					<div class="copy">
+						<a href="#">
+							<img sizes="100vw" src="images/banner_text.svg">
+						</a><a class="about-link" href="/readyfor">Start a project</a>
+					</div>
+				</section>
+		 
+				<div class="campaign-banner">
+					<a href="/campaign/repeat-shift">
+						<img class="banner-pc" sizes="100vw" src="images/banner_pc.jpg">
+						<img class="banner-sp" sizes="100vw" src="images/banner_sp.jpg">
+					</a>
+				</div>
+				<div class="category-wrap">
+					<h2>Secure and loving crowdfunding.</h2>
+					<div class="category-slider">
+						<div class="swiper-container" id="top-category-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="category-item"><a id="top_category_slider_art" title="Art / Photos" href="/projects/category/art">Art / Photos</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="category-item"><a id="top_category_slider_music" title="Musics" href="/projects/category/music">Musics</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="category-item"><a id="top_category_slider_dance" title="Products" href="/projects/category/dance">Products</a>
+									</div>
+								</div> 
+								<div class="swiper-slide">
+									<div class="category-item"><a id="top_category_slider_art" title="Art / Photos" href="/projects/category/art">Art / Photos</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="category-item"><a id="top_category_slider_music" title="Musics" href="/projects/category/music">Musics</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="category-item"><a id="top_category_slider_dance" title="Products" href="/projects/category/dance">Products</a>
+									</div>
+								</div> 
+								<div class="swiper-slide">
+									<div class="category-item"><a id="top_category_slider_art" title="Art / Photos" href="/projects/category/art">Art / Photos</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="category-item"><a id="top_category_slider_music" title="Musics" href="/projects/category/music">Musics</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="category-item"><a id="top_category_slider_dance" title="Products" href="/projects/category/dance">Products</a>
+									</div>
+								</div> 
+				 			</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+
+					<section class="staff_recommended">
+						<div class="row inner">
+							<div class="titlebox link-more">
+								<h2><i class="fa fa-heart"></i>Staff recommendation project</h2>
+							</div>
+
+							<div class="sp-box-outer">
+
+								<div class="boxes4 clearfix">
+
+
+									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+
+									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+
+ 									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+ 			   
+			  
+								</div>
+								<!-- boxes3 clearfix end -->
+
+							</div>
+							<!-- sp-box-outer end  -->
+
+						</div>
+						<!-- row end -->
+
+					</section>
+					<!-- staff_recommended end  -->
+
+					<section class="fresh">
+						<div class="row inner">
+							<div class="titlebox link-more">
+								<h2><i class="fa fa-exclamation"></i>New projects</h2><a href="/projects/fresh"><i class="fa fa-arrow-right"></i>See More</a>
+							</div>
+ 
+							<div class="sp-box-outer">
+
+								<div class="boxes4 clearfix">
+
+
+									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+
+									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+
+ 									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+ 			   
+			  
+								</div>
+								<!-- boxes3 clearfix end -->
+
+							</div>
+							<!-- sp-box-outer end  -->
+
+
+						</div>
+					</section>
+					<section class="popular">
+						<div class="row inner">
+							<div class="titlebox link-more">
+								<h2><i class="fa fa-line-chart"></i>Project close to end of application</h2><a href="/projects/popular"><i class="fa fa-arrow-right"></i>See More</a>
+							</div>
+
+							<div class="sp-box-outer">
+
+								<div class="boxes4 clearfix">
+
+
+									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+
+									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+
+ 									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+ 			   
+			  
+								</div>
+								<!-- boxes3 clearfix end -->
+
+							</div>
+							<!-- sp-box-outer end  -->
+
+						</div>
+					</section>
+					<section class="popular_rewards">
+						<div class="row inner">
+							<div class="titlebox link-more">
+								<h2><i class="fa fa-gift"></i>人気のリターン</h2>
+							</div>
+
+							<div class="sp-box-outer">
+
+								<div class="boxes4 clearfix">
+
+
+									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+
+									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+
+ 									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+ 			   
+			  
+								</div>
+								<!-- boxes3 clearfix end -->
+
+							</div>
+							<!-- sp-box-outer end  -->
+
+						</div>
+					</section>
+					<style type="text/css">
+						.popular_rewards{display:none}
+					</style>
+					<section class="last_spurt">
+						<div class="row inner">
+							<div class="titlebox link-more">
+								<h2><i class="fa fa-plane"></i>Project close to end of application</h2><a href="/projects/last-spurt"><i class="fa fa-arrow-right"></i>See More</a>
+							</div>
+		 					
+							<div class="sp-box-outer">
+
+								<div class="boxes4 clearfix">
+
+
+									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+
+									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+
+ 									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+ 			   
+			  
+								</div>
+								<!-- boxes3 clearfix end -->
+
+							</div>
+							<!-- sp-box-outer end  -->
+	
+						</div>
+					</section>
+					<section class="coming_soon">
+						<div class="row inner">
+							<div class="titlebox link-more">
+								<h2><i class="fa fa-clock-o"></i>Coming soon</h2><a href="/projects/coming-soon"><i class="fa fa-arrow-right"></i>See More</a>
+							</div>
+
+
+							<div class="sp-box-outer">
+
+								<div class="boxes4 clearfix">
+
+
+									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+
+									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+
+ 									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+ 			   
+			  
+								</div>
+								<!-- boxes3 clearfix end -->
+
+							</div>
+							<!-- sp-box-outer end  -->
+
+						</div>
+					</section>
+					<section class="theme">
+						<div class="row inner">
+							<div class="titlebox link-more">
+								<h2><i class="fa fa-users"></i>community</h2><a href="https://community.camp-fire.jp/"><i class="fa fa-arrow-right"></i>To community special page</a>
+							</div>
+ 
+
+							<div class="sp-box-outer">
+
+								<div class="boxes4 clearfix">
+
+
+									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+
+									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+
+ 									<!-- Box Start -->
+									<div class="box ">
+										<div class="box-in">
+											<div class="box-thumbnail">
+												<a href="/projects/view/191377">
+													<img sizes="100vw" src="images/campaign_img.jpg">
+												</a>
+											</div>
+											<div class="box-title"><a title="" href="/projects/view/191377"><h4>Mahjong professional wolf Suria village: 100th anniversary commemorative project</h4></a>
+											</div>
+											<div class="box-date sp-none">
+												<div class="category"><a href="/projects/category/dance"><i class="fa fa-tag"></i> Stage /</a>
+												</div>
+												<div class="ownner"><a href="/profile/threearro"><i class="fa fa-user"></i> admin</a>
+												</div>
+											</div>
+											<div class="meter">
+												<div class="meter-in">
+													<div class="bar" style="width: 82%;"><span>82%</span>
+													</div>
+												</div>
+											    <span>82%</span>
+											</div>
+											<div class="overview">
+												<div class="total">Supported <span class="text-primary">$1291,020</span></div>
+												<div class="rest">Supporters <span class="text-primary">232</span></div>
+												<div class="per">Left <span class="text-primary">23 Days</span></div>
+											</div>
+										</div>
+									</div>
+							 		<!-- Box End -->
+ 			   
+			  
+								</div>
+								<!-- boxes3 clearfix end -->
+
+							</div>
+							<!-- sp-box-outer end  -->
+
+
+						</div>
+					</section>
+					<section class="curation">
+						<div class="row inner">
+							<div class="titlebox link-more">
+								<h2><i class="fa fa-thumbs-o-up"></i>Curation channel</h2>
+							</div>
+							<div class="slick clearfix" id="js-curation-slick">
+
+								<div class="inner"><a target="_blank" href="#"><img sizes="100vw" src="images/curation-channel.jpg" alt='' /></a></div>
+								<div class="inner"><a target="_blank" href="#"><img sizes="100vw" src="images/curation-channel.jpg" alt='' /></a></div>
+								<div class="inner"><a target="_blank" href="#"><img sizes="100vw" src="images/curation-channel.jpg" alt='' /></a></div>
+								<div class="inner"><a target="_blank" href="#"><img sizes="100vw" src="images/curation-channel.jpg" alt='' /></a></div>
+								<div class="inner"><a target="_blank" href="#"><img sizes="100vw" src="images/curation-channel.jpg" alt='' /></a></div>
+								<div class="inner"><a target="_blank" href="#"><img sizes="100vw" src="images/curation-channel.jpg" alt='' /></a></div>
+								<div class="inner"><a target="_blank" href="#"><img sizes="100vw" src="images/curation-channel.jpg" alt='' /></a></div>
+								<div class="inner"><a target="_blank" href="#"><img sizes="100vw" src="images/curation-channel.jpg" alt='' /></a></div>
+								<div class="inner"><a target="_blank" href="#"><img sizes="100vw" src="images/curation-channel.jpg" alt='' /></a></div>
+								<div class="inner"><a target="_blank" href="#"><img sizes="100vw" src="images/curation-channel.jpg" alt='' /></a></div>
+								<div class="inner"><a target="_blank" href="#"><img sizes="100vw" src="images/curation-channel.jpg" alt='' /></a></div>
+								<div class="inner"><a target="_blank" href="#"><img sizes="100vw" src="images/curation-channel.jpg" alt='' /></a></div>
+								<div class="inner"><a target="_blank" href="#"><img sizes="100vw" src="images/curation-channel.jpg" alt='' /></a></div>
+								<div class="inner"><a target="_blank" href="#"><img sizes="100vw" src="images/curation-channel.jpg" alt='' /></a></div>
+								<div class="inner"><a target="_blank" href="#"><img sizes="100vw" src="images/curation-channel.jpg" alt='' /></a></div>
+								<div class="inner"><a target="_blank" href="#"><img sizes="100vw" src="images/curation-channel.jpg" alt='' /></a></div>
+								<div class="inner"><a target="_blank" href="#"><img sizes="100vw" src="images/curation-channel.jpg" alt='' /></a></div>
+								<div class="inner"><a target="_blank" href="#"><img sizes="100vw" src="images/curation-channel.jpg" alt='' /></a></div>
+								<div class="inner"><a target="_blank" href="#"><img sizes="100vw" src="images/curation-channel.jpg" alt='' /></a></div>
+								 
+							</div>
+						</div>
+					</section>
+					<section class="top-updates-box">
+						<div class="row inner">
+							<div class="titlebox link-more">
+								<h2><i class="fa fa-bullhorn"></i>Latest activity report</h2><a href="/activities"><i class="fa fa-arrow-right"></i>See More</a>
+							</div>
+							<ul class="top-updates layouts-float3 clearfix">
+
+								<li>
+									<a href="#">
+										<div class="thumbnail">
+											<img sizes="100vw" src="images/activity_report_thumb.jpg">
+										</div>
+										<div class="body">
+											<div class="title inner"><small class="yellow small rounded button"><i class="fa fa-bullhorn"></i>activity report</small>
+												<h4>2019/9/8 (Sun) Kickoff event will be held!</h4><span class="username"><i class="fa fa-user"></i>Bentenya_japan </span><span class="time">2019/09/06 14:51</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="thumbnail">
+											<img sizes="100vw" src="images/activity_report_thumb.jpg">
+										</div>
+										<div class="body">
+											<div class="title inner"><small class="yellow small rounded button"><i class="fa fa-bullhorn"></i>activity report</small>
+												<h4>2019/9/8 (Sun) Kickoff event will be held!</h4><span class="username"><i class="fa fa-user"></i>Bentenya_japan </span><span class="time">2019/09/06 14:51</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="thumbnail">
+											<img sizes="100vw" src="images/activity_report_thumb.jpg">
+										</div>
+										<div class="body">
+											<div class="title inner"><small class="yellow small rounded button"><i class="fa fa-bullhorn"></i>activity report</small>
+												<h4>2019/9/8 (Sun) Kickoff event will be held!</h4><span class="username"><i class="fa fa-user"></i>Bentenya_japan </span><span class="time">2019/09/06 14:51</span>
+											</div>
+										</div>
+									</a>
+								</li>
+							 
+							</ul>
+						</div>
+					</section>
+
+					<!-- Main Chaimp Form -->
+					<div data-v-adf9178c="" class="signup-form-for-mailchimp"><h3><i data-v-adf9178c="" class="fa fa-envelope"></i>Subscribe to the newsletter</h3><br /><p>Deliver the latest information on CAMPFIRE! You can receive deals such as new projects and campaigns twice a week.</p> <div data-v-adf9178c="" class="form"><input data-v-adf9178c="" type="email" name="mail_chimp[email]" placeholder="Enter your email"> <a data-v-adf9178c="" class="green no-shadow button ga-subscribe-mail">
+				      Sign Up
+				    </a>
+					</div>
+					</div>
+
+					<section class="start">
+						<div class="center row inner">
+							<div class="submit-box inner">
+								<p>Anyone can start crowdfunding easily and quickly.</p><a class="red no-shadow button" href="/readyfor"><i class="fa fa-pencil-square"></i>Start a project</a>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div class="link-counsels sp-none sc-none"><a href="/readyfor">Consult about the use of crowdfunding</a>
+			</div>
+		</div>
+	</div>
+	<footer class="footer" id="js-footer">
+		<div class="layouts-float row clearfix">
+			<section class="about_publish lfloat w20 clearfix">
+				<h6>About project publication</h6>
+				<div class="innder_block">
+					<p class="category_title">Start a project</p>
+					<ul>
+						<li><a href="#">Create a project</a></li>
+						<li><a href="#">Document request</a></li>
+						<li><a href="#">Talk to staff</a></li>
+					</ul>
+				</div>
+				<div class="innder_block">
+					<p class="category_title">Usage and operation guide</p>
+					<ul>
+						<li><a href="#">Guidelines</a></li>
+						<li><a href="#">Project creation guide</a></li>
+						<li><a href="#">How to make a project</a></li>
+						<li><a href="#">How to spread the project</a></li>
+					</ul>
+				</div>
+			</section>
+			<section class="discover_category lfloat w40 clearfix">
+				<h6>Find a project</h6>
+				<p class="category_title">Search by category</p>
+				<ul class="lfloat">
+					<li><a href="#">Technology gadget</a></li>
+					<li><a href="#">Product</a></li>
+					<li><a href="#">Food / Restaurant</a></li>
+					<li><a href="#">Anime cartoon</a></li>
+					<li><a href="#">Fashion</a></li>
+					<li><a href="#">Game service development</a></li>
+					<li><a href="#">Business / entrepreneurship</a></li>
+					<li><a href="#">Art / Photo</a></li>
+				</ul>
+				<ul class="lfloat">
+					<li><a href="#">Town development and regional revitalization</a></li>
+					<li><a href="#">Musics</a></li>
+					<li><a href="#">Challenge</a></li>
+					<li><a href="#">Sports</a></li>
+					<li><a href="#">Movie / Movie</a></li>
+					<li><a href="#">Book / Magazine publishing</a></li>
+					<li><a href="#">Beauty / Healthcare</a></li>
+					<li><a href="#">Stage / Performance</a></li>
+					<li><a href="#">Social Good</a></li>
+				</ul>
+			</section>
+			<section class="discover_service lfloat w20 clearfix">
+				<p class="category_title">Search by brand</p>
+				<ul>
+					<li><a href="#">CAMPFIRE</a></li>
+					<li><a href="#">FAAVO</a></li>
+					<li><a href="#">GoodMorning</a></li>
+					<li><a href="#">CLOSS</a></li>
+					<li><a href="#">machi-ya</a></li>
+					<li><a href="#">3rdTable</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">BOOSTER</a></li>
+					<li><a href="#">CAMPFIRE oldness and tax payment</a></li>
+					<li><a href="#">CAMPFIRE community</a></li>
+					<li><a href="#">CAMPFIRE Creation</a></li>
+				</ul>
+			</section>
+			<section class="about_campfire lfloat w20 clearfix">
+				<h6>About CAMPFIRE</h6>
+				<ul>
+					<li><a href="#">About CAMPFIRE</a></li>
+					<li><a href="#">What is crowdfunding</a></li>
+					<li><a href="#">Frequently Asked Questions</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Terms of Service</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Notation based on Specified Commercial Transaction Law</a></li>
+					<li><a href="#">CM broadcast</a></li>
+				</ul>
+			</section>
+		</div>
+		<section class="services">
+			<h6>Management service</h6>
+			<ul>
+				<li><a target="_blank" href="https://owners.camp-fire.jp/">CAMPFIRE Owners</a>
+				</li>
+				<li><a title="CAMPFIRE Bank" target="_blank" href="https://bank.campfire.co.jp">CAMPFIRE Bank</a>
+				</li>
+				<li><a title="CAMPFIRE for Youth" target="_blank" href="https://campfire-youth.com/">CAMPFIRE for Youth</a>
+				</li>
+				<li><a title="polca" target="_blank" href="https://polca.jp">polca</a>
+				</li>
+				<li><a title="Gojo" target="_blank" href="https://lp.gojo.life/">Gojo</a>
+				</li>
+			</ul>
+			<ul>
+				<li><a title="TOMOSHIBI" target="_blank" href="#">TOMOSHIBI</a>
+				</li>
+				<li><a title="EXODUS" target="_blank" href="#">EXODUS</a>
+				</li>
+				<li><a title="hibana" target="_blank" href="#">hibana</a>
+				</li>
+				<li><a title="BAMP" target="_blank" href="#">BAMP</a>
+				</li>
+			</ul>
+		</section>
+		<div class="footer_bottom_area">
+			<section class="company">
+				<adress class="copyright">©<a target="_blank" href="https://www.campfire.co.jp">CAMPFIRE, Inc.</a>
+				</adress>
+				<ul>
+					<li><a title="Company Profile" target="_blank" href="https://campfire.co.jp/about/">Company Profile</a>
+					</li>
+					<li><a title="Employment information" target="_blank" href="https://www.wantedly.com/companies/campfirejp/projects">Employment information</a>
+					</li>
+				</ul>
+			</section>
+			<section class="social rfloat">
+				<h6>Let's connect.</h6>
+				<ul>
+					<li>
+						<a target="_blank" href="#">
+							<img alt="メールマガジン" class="pc" sizes="100vw" src="images/env.png">
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="#">
+							<img title="Facebook" class="pc" sizes="100vw" src="images/fb.png">
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="#">
+							<img title="Twitter" class="pc" sizes="100vw" src="images/twitter.png">
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="#">
+							<img title="Instagram" class="pc" sizes="100vw" src="images/insta.png">
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="#">
+							<img title="LINE" class="pc" sizes="100vw" src="images/line.png">
+						</a>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</footer>
+  
+</body>
+
+</html>

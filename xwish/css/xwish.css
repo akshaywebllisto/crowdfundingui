@@ -1,0 +1,73 @@
+
+.xwish_banner {
+    background-image: url(https://angelium.net/wp-content/uploads/2019/09/portrait-787522.jpg);
+    background-position: top center;
+    background-size: cover;
+    min-height: 700px;
+    background-attachment: fixed;
+    max-height: 100vh;
+    position: relative;
+}
+
+.backgroundoverlay {
+    background-color: #000;
+    opacity: .1;
+    transition: background .3s,border-radius .3s,opacity .3s;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.xwish_banner .banner_box {
+    max-width: 50%;
+    position: relative;
+    top: 176px;
+}
+
+.xwish_banner .heading1 {
+    color: #fff;
+    font-family: "Dr Sugiyama",Sans-serif;
+    font-size: 192px;
+    font-weight: 500;
+    mix-blend-mode: overlay;
+    line-height: 142px;
+    margin: 0;
+}
+
+.xwish_banner .heading2 {
+	color: #fff;
+	font-family: "Wire One",Sans-serif;
+	font-size: 102px;
+	font-weight: 500;
+	padding: 0;
+	margin: 0;
+	line-height: 97px;
+	mix-blend-mode: overlay;
+	margin-bottom: 20px;
+}
+
+.xwish_banner .heading3 {
+    color: #fff;
+    font-family: "Nunito Sans",Sans-serif;
+    letter-spacing: 8.2px;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 52px;
+}
+
+.xwish_banner .btn-dark {
+	font-family: "Earth Orbiter",Sans-serif;
+	text-shadow: 0px 0px 10px rgba(0,0,0,.3);
+	background-color: #000;
+	border-radius: 9px;
+	border: 1px solid #ce884a;
+	font-weight: bold;
+	line-height: 1;
+	font-size: 16px;
+	padding: 15px 30px;
+}
