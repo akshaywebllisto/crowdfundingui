@@ -46,7 +46,7 @@ jQuery('document').ready(function($){
   	$('.about .section_heading,.projects .section_heading').each(function() {
       if (isScrolledIntoView(this) === true) { 
         jQuery(this).children('.txt').addClass('fadeInUp');
-        jQuery(this).children('.bg_sign').addClass('fadeInDown');
+        jQuery(this).children('.bg_sign').show().addClass('fadeInDown');
 	  }
     });
     $('.about .desc').each(function() {
