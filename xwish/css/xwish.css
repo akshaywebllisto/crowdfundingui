@@ -3,6 +3,10 @@
 	background: #f7f7fa;
 }
 
+.navbar {
+        background: rgba(0,0,0,0.8) !important;
+    }
+
 p.text_design,
 section p {
     font-weight: 300;
@@ -87,7 +91,7 @@ a.navbar-brand img {
 }
 
 .xwish_banner {
-    background-image: url(https://angelium.net/wp-content/uploads/2019/09/portrait-787522.jpg);
+    background-image: url('../images/xwish_banner_bg.jpg');
     background-position: top center;
     background-size: cover;
     height: 700px;
@@ -190,6 +194,7 @@ section.projects,
 section.about {
     min-height: 100vh;
     padding: 100px 0 10px 0;
+    overflow: hidden;
 }
 
 section.about p.desc {
@@ -233,7 +238,7 @@ section.about .slick-next {
 
 .slick_bg {
     background-color: #833ca3;
-    background-image: url(https://angelium.net/wp-content/uploads/2019/08/girl-1026246.jpg);
+    background-image: url('../images/xwish_slide1.jpg');
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -267,10 +272,9 @@ section.about .slick-next {
 	color: #fff  !important;
 }
 
-	
-
 .project_box {
 	    overflow: hidden;
+        display: none;
 }
 
 .project_box .flip_box{
@@ -313,7 +317,7 @@ section.about .slick-next {
 }
 
 .flip_box .front {
-	background-image: url(https://angelium.net/wp-content/uploads/2019/08/xlove.jpg);
+	background-image: url('../images/xlove.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -326,7 +330,7 @@ section.about .slick-next {
 }
 
 .flip_box .back {
-	background-image: url(https://angelium.net/wp-content/uploads/2019/08/xlove.jpg);
+	background-image: url('../images/xlove.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;

@@ -1,5 +1,9 @@
 @media all and (max-width: 768px)  {
 
+	.navbar {
+		background: #000 !important;
+	}
+
 	.xwish_banner .banner_box {
 		max-width: 100%;
 	} 
