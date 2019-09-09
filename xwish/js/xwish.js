@@ -1,4 +1,4 @@
-jQuery('document').ready(function(){
+jQuery('document').ready(function($){
 
 	jQuery('.single_slide').slick({
 		dots: true,
@@ -8,4 +8,11 @@ jQuery('document').ready(function(){
   	});
 				
 
-});
+	jQuery(".progress").each(function() {
+		var progressBar = $(".progress-bar");
+		progressBar.each(function(indx){
+			$(this).css("width", $(this).attr("aria-valuenow") + "%");
+		});
+	});
+
+}); 
